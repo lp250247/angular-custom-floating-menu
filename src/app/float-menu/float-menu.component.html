@@ -1,0 +1,11 @@
+  
+  <!-- This template displays the overlay content and is connected to the button -->
+  <ng-template
+    cdkConnectedOverlay
+    [cdkConnectedOverlayOrigin]="trigger"
+    [cdkConnectedOverlayOpen]="show"
+    (overlayOutsideClick)="close($event)"
+  >
+        <ng-content></ng-content>
+  </ng-template>
+  

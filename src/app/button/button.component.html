@@ -1,0 +1,13 @@
+<!-- This button triggers the overlay and is it's origin -->
+<button (click)="toggle($event)" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
+    {{isOpen ? "Close" : "Opend"}}
+  </button>
+  
+  <app-float-menu [show]="isOpen" (onClose)="close()" [trigger]="trigger">
+    ---- <br>
+    float <br>
+    menu <br>
+    content <br>
+    ----
+  </app-float-menu>
+      
